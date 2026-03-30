@@ -514,7 +514,7 @@ class NotificationCreateView(
             extras[field] = form.cleaned_data[field]
 
         notification_type = self.request.GET["type"]
-        if notification_type in ("email"):
+        if notification_type == "email":
             form.instance.is_enabled = False
             extras["created_by_email"] = self.request.user.email
             extras["confirmation_token"] = secrets.token_urlsafe(32)
@@ -531,7 +531,7 @@ class NotificationCreateView(
         }
 
         response = super().form_valid(form)
-        if notification_type in ("email", "report"):
+        if notification_type == "email":
             send_notification_confirmation_email(form.instance, self.request)
         return response
 
