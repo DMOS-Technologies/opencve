@@ -48,8 +48,8 @@ NOTIFICATION_TYPES = [
     "title",
     "vendors",
     "weaknesses",
+    "send_report",
 ]
-
 
 class ProjectsListView(LoginRequiredMixin, OrganizationIsMemberMixin, ListView):
     context_object_name = "projects"
