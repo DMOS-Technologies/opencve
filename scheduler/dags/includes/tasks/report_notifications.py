@@ -24,7 +24,7 @@ async def send_report_email(report_data):
 
     web_url = conf.get("opencve", "web_base_url")
     project_url = (
-        f"{web_url}/org/{org_name}/projects/{project_name}/reports"
+        f"{web_url}/org/{org_name}/projects/{project_name}/reports/{day}"
     )
 
     context = {
