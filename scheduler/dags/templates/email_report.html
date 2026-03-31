@@ -34,7 +34,13 @@
     <h2>AI Security Summary</h2>
     <div class="summary">{% set formatted = ai_summary | replace('\n\n', '|||') | replace('\n', '<br>') %}{% for para in formatted.split('|||') %}<p>{{ para | safe }}</p>{% endfor %}</div>
     <div class="btn-wrapper">
-      <a href="{{ project_url }}" class="btn">View Full Report</a>
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td align="center" style="padding: 24px 0 16px 0;">
+            <a href="{{ project_url }}" style="background-color:#00c0ef;color:#ffffff;text-decoration:none;padding:12px 28px;border-radius:4px;font-size:14px;font-family:Arial,sans-serif;display:inline-block;">View Full Report</a>
+          </td>
+        </tr>
+      </table>
     </div>
   </div>
   <div class="footer">
