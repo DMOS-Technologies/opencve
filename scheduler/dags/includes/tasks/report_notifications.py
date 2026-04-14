@@ -37,7 +37,7 @@ async def send_report_email(report_data):
         "year": datetime.datetime.now().year,
     }
 
-    subject = f"[{project_name}] Daily Security Report - {day}"
+    subject = f"[{project_name}] Daily Security Advisory - {day}"
 
     logger.info(
         "Sending report email to %s for project %s (notification: %s)",
