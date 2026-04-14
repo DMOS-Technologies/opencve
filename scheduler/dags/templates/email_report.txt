@@ -1,4 +1,4 @@
-Daily Security Report - {{ project }} ({{ day }})
+Daily Security Advisory - {{ project }} ({{ day }})
 =================================================
 Organization: {{ organization }}
 Project: {{ project }}
@@ -13,4 +13,4 @@ View the full report:
 
 --
 You are receiving this because you configured a Report notification on project {{ project }}.
-OpenCVE (c) {{ year }}
+(c) {{ year }} DMOS Technologies Sdn Bhd.
