@@ -19,7 +19,7 @@ start_date = pendulum.from_format(
 
 with DAG(
     "send_reports",
-    schedule="0 6 * * *",
+    schedule="0 22 * * *", # 6am BNT every day
     start_date=start_date,
     catchup=True,
     max_active_runs=1,
